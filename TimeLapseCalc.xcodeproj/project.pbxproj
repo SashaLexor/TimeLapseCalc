@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D739DF2A5202332314C777CE /* Pods_TimeLapseCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC13A6C08A2DC4C279E2D67 /* Pods_TimeLapseCalc.framework */; };
 		FAEE8F51206D22C10068DF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE8F50206D22C10068DF1C /* AppDelegate.swift */; };
 		FAEE8F53206D22C10068DF1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE8F52206D22C10068DF1C /* ViewController.swift */; };
 		FAEE8F56206D22C10068DF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEE8F54206D22C10068DF1C /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CC13A6C08A2DC4C279E2D67 /* Pods_TimeLapseCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeLapseCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		409CE517186251C373D7854D /* Pods-TimeLapseCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLapseCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLapseCalc/Pods-TimeLapseCalc.release.xcconfig"; sourceTree = "<group>"; };
+		5EBED04A30090ACC2E812B1F /* Pods-TimeLapseCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLapseCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLapseCalc/Pods-TimeLapseCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		FAEE8F4D206D22C10068DF1C /* TimeLapseCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLapseCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEE8F50206D22C10068DF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEE8F52206D22C10068DF1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D739DF2A5202332314C777CE /* Pods_TimeLapseCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C0A5C11D9C361EBF8399240 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CC13A6C08A2DC4C279E2D67 /* Pods_TimeLapseCalc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C76BEC6D0DF90E7DD68B780D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EBED04A30090ACC2E812B1F /* Pods-TimeLapseCalc.debug.xcconfig */,
+				409CE517186251C373D7854D /* Pods-TimeLapseCalc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FAEE8F44206D22C10068DF1C = {
 			isa = PBXGroup;
 			children = (
 				FAEE8F4F206D22C10068DF1C /* TimeLapseCalc */,
 				FAEE8F4E206D22C10068DF1C /* Products */,
+				C76BEC6D0DF90E7DD68B780D /* Pods */,
+				9C0A5C11D9C361EBF8399240 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAEE8F5F206D22C10068DF1C /* Build configuration list for PBXNativeTarget "TimeLapseCalc" */;
 			buildPhases = (
+				149CDE78FFC5DD17C7B2551E /* [CP] Check Pods Manifest.lock */,
 				FAEE8F49206D22C10068DF1C /* Sources */,
 				FAEE8F4A206D22C10068DF1C /* Frameworks */,
 				FAEE8F4B206D22C10068DF1C /* Resources */,
+				F1DF6EC9875FB4AF0FFC0E69 /* [CP] Embed Pods Frameworks */,
+				7FAD7D74B381E3EF9F8A235D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		149CDE78FFC5DD17C7B2551E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeLapseCalc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAD7D74B381E3EF9F8A235D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeLapseCalc/Pods-TimeLapseCalc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1DF6EC9875FB4AF0FFC0E69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimeLapseCalc/Pods-TimeLapseCalc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeLapseCalc/Pods-TimeLapseCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAEE8F49206D22C10068DF1C /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		FAEE8F60206D22C10068DF1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EBED04A30090ACC2E812B1F /* Pods-TimeLapseCalc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +371,7 @@
 		};
 		FAEE8F61206D22C10068DF1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409CE517186251C373D7854D /* Pods-TimeLapseCalc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
