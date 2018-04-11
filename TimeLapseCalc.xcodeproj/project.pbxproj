@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D739DF2A5202332314C777CE /* Pods_TimeLapseCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC13A6C08A2DC4C279E2D67 /* Pods_TimeLapseCalc.framework */; };
 		FAEE8F51206D22C10068DF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE8F50206D22C10068DF1C /* AppDelegate.swift */; };
-		FAEE8F53206D22C10068DF1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE8F52206D22C10068DF1C /* ViewController.swift */; };
 		FAEE8F56206D22C10068DF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEE8F54206D22C10068DF1C /* Main.storyboard */; };
 		FAEE8F58206D22C10068DF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEE8F57206D22C10068DF1C /* Assets.xcassets */; };
 		FAEE8F5B206D22C10068DF1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEE8F59206D22C10068DF1C /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 		5EBED04A30090ACC2E812B1F /* Pods-TimeLapseCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLapseCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLapseCalc/Pods-TimeLapseCalc.debug.xcconfig"; sourceTree = "<group>"; };
 		FAEE8F4D206D22C10068DF1C /* TimeLapseCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLapseCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEE8F50206D22C10068DF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAEE8F52206D22C10068DF1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAEE8F55206D22C10068DF1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAEE8F57206D22C10068DF1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAEE8F5A206D22C10068DF1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				FAEE8F50206D22C10068DF1C /* AppDelegate.swift */,
-				FAEE8F52206D22C10068DF1C /* ViewController.swift */,
 				FAEE8F54206D22C10068DF1C /* Main.storyboard */,
 				FAEE8F57206D22C10068DF1C /* Assets.xcassets */,
 				FAEE8F59206D22C10068DF1C /* LaunchScreen.storyboard */,
@@ -219,7 +216,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAEE8F53206D22C10068DF1C /* ViewController.swift in Sources */,
 				FAEE8F51206D22C10068DF1C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karzhenka.TimeLapseCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -381,7 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karzhenka.TimeLapseCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
