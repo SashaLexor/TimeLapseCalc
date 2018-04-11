@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D739DF2A5202332314C777CE /* Pods_TimeLapseCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC13A6C08A2DC4C279E2D67 /* Pods_TimeLapseCalc.framework */; };
+		FA3147F0207E720600207FCD /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147EF207E720600207FCD /* CalculatorViewController.swift */; };
+		FA3147F2207E727100207FCD /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147F1207E727100207FCD /* CalculatorViewModel.swift */; };
+		FA3147F5207E74C400207FCD /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147F4207E74C400207FCD /* TextFieldTableViewCell.swift */; };
+		FA3147F7207E754000207FCD /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147F6207E754000207FCD /* LabelTableViewCell.swift */; };
+		FA3147F9207E755300207FCD /* PickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147F8207E755300207FCD /* PickerTableViewCell.swift */; };
+		FA3147FB207E75A500207FCD /* TextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147FA207E75A500207FCD /* TextFieldCellViewModel.swift */; };
+		FA3147FD207E75D400207FCD /* LabelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147FC207E75D400207FCD /* LabelCellViewModel.swift */; };
+		FA3147FF207E75EE00207FCD /* PickerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147FE207E75EE00207FCD /* PickerCellViewModel.swift */; };
 		FAEE8F51206D22C10068DF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE8F50206D22C10068DF1C /* AppDelegate.swift */; };
 		FAEE8F56206D22C10068DF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEE8F54206D22C10068DF1C /* Main.storyboard */; };
 		FAEE8F58206D22C10068DF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEE8F57206D22C10068DF1C /* Assets.xcassets */; };
@@ -18,6 +26,14 @@
 		2CC13A6C08A2DC4C279E2D67 /* Pods_TimeLapseCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeLapseCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		409CE517186251C373D7854D /* Pods-TimeLapseCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLapseCalc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLapseCalc/Pods-TimeLapseCalc.release.xcconfig"; sourceTree = "<group>"; };
 		5EBED04A30090ACC2E812B1F /* Pods-TimeLapseCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLapseCalc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLapseCalc/Pods-TimeLapseCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		FA3147EF207E720600207FCD /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		FA3147F1207E727100207FCD /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		FA3147F4207E74C400207FCD /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		FA3147F6207E754000207FCD /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		FA3147F8207E755300207FCD /* PickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerTableViewCell.swift; sourceTree = "<group>"; };
+		FA3147FA207E75A500207FCD /* TextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		FA3147FC207E75D400207FCD /* LabelCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCellViewModel.swift; sourceTree = "<group>"; };
+		FA3147FE207E75EE00207FCD /* PickerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCellViewModel.swift; sourceTree = "<group>"; };
 		FAEE8F4D206D22C10068DF1C /* TimeLapseCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLapseCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEE8F50206D22C10068DF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEE8F55206D22C10068DF1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +71,61 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA3147ED207E71C400207FCD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA3147EE207E71E400207FCD /* Calculator */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA3147EE207E71E400207FCD /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				FA3147EF207E720600207FCD /* CalculatorViewController.swift */,
+				FA3147F1207E727100207FCD /* CalculatorViewModel.swift */,
+				FA3147F3207E749400207FCD /* Cells */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		FA3147F3207E749400207FCD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA314800207E761D00207FCD /* TextFieldCell */,
+				FA314801207E762F00207FCD /* LableCell */,
+				FA314802207E763800207FCD /* PickerCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA314800207E761D00207FCD /* TextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA3147F4207E74C400207FCD /* TextFieldTableViewCell.swift */,
+				FA3147FA207E75A500207FCD /* TextFieldCellViewModel.swift */,
+			);
+			path = TextFieldCell;
+			sourceTree = "<group>";
+		};
+		FA314801207E762F00207FCD /* LableCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA3147F6207E754000207FCD /* LabelTableViewCell.swift */,
+				FA3147FC207E75D400207FCD /* LabelCellViewModel.swift */,
+			);
+			path = LableCell;
+			sourceTree = "<group>";
+		};
+		FA314802207E763800207FCD /* PickerCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA3147F8207E755300207FCD /* PickerTableViewCell.swift */,
+				FA3147FE207E75EE00207FCD /* PickerCellViewModel.swift */,
+			);
+			path = PickerCell;
+			sourceTree = "<group>";
+		};
 		FAEE8F44206D22C10068DF1C = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +147,7 @@
 		FAEE8F4F206D22C10068DF1C /* TimeLapseCalc */ = {
 			isa = PBXGroup;
 			children = (
+				FA3147ED207E71C400207FCD /* Screens */,
 				FAEE8F50206D22C10068DF1C /* AppDelegate.swift */,
 				FAEE8F54206D22C10068DF1C /* Main.storyboard */,
 				FAEE8F57206D22C10068DF1C /* Assets.xcassets */,
@@ -216,7 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3147F0207E720600207FCD /* CalculatorViewController.swift in Sources */,
+				FA3147F9207E755300207FCD /* PickerTableViewCell.swift in Sources */,
+				FA3147FF207E75EE00207FCD /* PickerCellViewModel.swift in Sources */,
+				FA3147F7207E754000207FCD /* LabelTableViewCell.swift in Sources */,
+				FA3147F2207E727100207FCD /* CalculatorViewModel.swift in Sources */,
+				FA3147FB207E75A500207FCD /* TextFieldCellViewModel.swift in Sources */,
 				FAEE8F51206D22C10068DF1C /* AppDelegate.swift in Sources */,
+				FA3147F5207E74C400207FCD /* TextFieldTableViewCell.swift in Sources */,
+				FA3147FD207E75D400207FCD /* LabelCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
