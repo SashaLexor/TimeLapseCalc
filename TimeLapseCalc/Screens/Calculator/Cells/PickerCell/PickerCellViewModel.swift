@@ -8,6 +8,16 @@
 
 import Foundation
 
-class PickerCellViewModel {
+protocol PickerCellViewModelProtocol: CellViewModelProtocol {
     
+}
+
+class PickerCellViewModel: PickerCellViewModelProtocol {
+    
+    let cellIdentifier = CalculatorCellIdenfiers.pickerCell.rawValue
+    let cellTitle: String
+    
+    init(cellTitle: String) {
+        self.cellTitle = cellTitle
+    }
 }

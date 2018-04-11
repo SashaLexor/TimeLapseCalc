@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TextFieldTableViewCell: UITableViewCell {
+class TextFieldTableViewCell: UITableViewCell, CalculatorCellProtocol {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +19,10 @@ class TextFieldTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setupWithViewModel(viewModel: CellViewModelProtocol) {
+        
     }
 
 }

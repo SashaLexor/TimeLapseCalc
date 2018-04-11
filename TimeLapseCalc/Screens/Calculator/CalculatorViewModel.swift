@@ -7,7 +7,18 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class CalculatorViewModel {
     
+    let cellViewModels: Observable<[CellViewModelProtocol]>
+
+    init() {
+        cellViewModels = Observable.just([
+            PickerCellViewModel(cellTitle: "Cell 1"),
+            TextFieldCellViewModel(cellTitle: "Cell 2"),
+            LabelCellViewModel(cellTitle: "Cell 3")
+            ])
+    }
 }

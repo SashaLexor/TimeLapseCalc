@@ -8,6 +8,16 @@
 
 import Foundation
 
-class TextFieldCellViewModel {
+protocol TextFieldCellViewModelProtocol: CellViewModelProtocol {
     
+}
+
+class TextFieldCellViewModel: TextFieldCellViewModelProtocol {
+    
+    let cellIdentifier = CalculatorCellIdenfiers.textFieldCell.rawValue
+    let cellTitle: String
+    
+    init(cellTitle: String) {
+        self.cellTitle = cellTitle
+    }
 }

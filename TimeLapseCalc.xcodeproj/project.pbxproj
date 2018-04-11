@@ -16,6 +16,7 @@
 		FA3147FB207E75A500207FCD /* TextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147FA207E75A500207FCD /* TextFieldCellViewModel.swift */; };
 		FA3147FD207E75D400207FCD /* LabelCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147FC207E75D400207FCD /* LabelCellViewModel.swift */; };
 		FA3147FF207E75EE00207FCD /* PickerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3147FE207E75EE00207FCD /* PickerCellViewModel.swift */; };
+		FA314804207E7DBF00207FCD /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA314803207E7DBF00207FCD /* CellViewModelProtocol.swift */; };
 		FAEE8F51206D22C10068DF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEE8F50206D22C10068DF1C /* AppDelegate.swift */; };
 		FAEE8F56206D22C10068DF1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEE8F54206D22C10068DF1C /* Main.storyboard */; };
 		FAEE8F58206D22C10068DF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEE8F57206D22C10068DF1C /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		FA3147FA207E75A500207FCD /* TextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCellViewModel.swift; sourceTree = "<group>"; };
 		FA3147FC207E75D400207FCD /* LabelCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCellViewModel.swift; sourceTree = "<group>"; };
 		FA3147FE207E75EE00207FCD /* PickerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerCellViewModel.swift; sourceTree = "<group>"; };
+		FA314803207E7DBF00207FCD /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
 		FAEE8F4D206D22C10068DF1C /* TimeLapseCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLapseCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEE8F50206D22C10068DF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEE8F55206D22C10068DF1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		FA3147F3207E749400207FCD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FA314803207E7DBF00207FCD /* CellViewModelProtocol.swift */,
 				FA314800207E761D00207FCD /* TextFieldCell */,
 				FA314801207E762F00207FCD /* LableCell */,
 				FA314802207E763800207FCD /* PickerCell */,
@@ -290,6 +293,7 @@
 			files = (
 				FA3147F0207E720600207FCD /* CalculatorViewController.swift in Sources */,
 				FA3147F9207E755300207FCD /* PickerTableViewCell.swift in Sources */,
+				FA314804207E7DBF00207FCD /* CellViewModelProtocol.swift in Sources */,
 				FA3147FF207E75EE00207FCD /* PickerCellViewModel.swift in Sources */,
 				FA3147F7207E754000207FCD /* LabelTableViewCell.swift in Sources */,
 				FA3147F2207E727100207FCD /* CalculatorViewModel.swift in Sources */,

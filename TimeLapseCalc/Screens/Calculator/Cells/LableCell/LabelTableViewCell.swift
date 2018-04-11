@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LabelTableViewCell: UITableViewCell {
+class LabelTableViewCell: UITableViewCell, CalculatorCellProtocol {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +19,10 @@ class LabelTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setupWithViewModel(viewModel: CellViewModelProtocol) {
+        
     }
 
 }

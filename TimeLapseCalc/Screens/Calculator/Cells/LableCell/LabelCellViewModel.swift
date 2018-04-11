@@ -8,6 +8,16 @@
 
 import Foundation
 
-class LabelCellViewModel {
+protocol LabelCellViewModelProtocol: CellViewModelProtocol {
     
+}
+
+class LabelCellViewModel: LabelCellViewModelProtocol {
+    
+    let cellIdentifier = CalculatorCellIdenfiers.lableCell.rawValue
+    let cellTitle: String
+    
+    init(cellTitle: String) {
+        self.cellTitle = cellTitle
+    }
 }
