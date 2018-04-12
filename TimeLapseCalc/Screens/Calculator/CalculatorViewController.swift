@@ -37,12 +37,30 @@ class CalculatorViewController: UIViewController {
                 return cell
             }
             .disposed(by: disposeBag)
+        
+        tableView.rx.setDelegate(self)
+            .disposed(by: disposeBag)
+        
     }
     
     private func configureTableView() {
         tableView.tableFooterView = UIView()
+        
         tableView.layer.cornerRadius = 15.0
         tableView.layer.borderColor = UIColor.red.cgColor
         tableView.layer.borderWidth = 3.0
+    }
+}
+
+extension CalculatorViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        var cellHeight: CGFloat = 44
+        viewModel.cellViewModels
+            .subscribe(onNext: { cellViewModels in
+                cellHeight = tableView.frame.height / CGFloat(cellViewModels.count)
+            })
+            .disposed(by: disposeBag)
+        return cellHeight
     }
 }

@@ -7,17 +7,19 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-protocol TextFieldCellViewModelProtocol: CellViewModelProtocol {
+protocol TextFieldCellViewModelProtocol {
     
 }
 
-class TextFieldCellViewModel: TextFieldCellViewModelProtocol {
-    
+class TextFieldCellViewModel: CellViewModelProtocol, CalculatorCellViewModelProtocol {
+
     let cellIdentifier = CalculatorCellIdenfiers.textFieldCell.rawValue
-    let cellTitle: String
+    var cellTitle: Observable<String>
     
     init(cellTitle: String) {
-        self.cellTitle = cellTitle
+        self.cellTitle = Observable.just(cellTitle)
     }
 }

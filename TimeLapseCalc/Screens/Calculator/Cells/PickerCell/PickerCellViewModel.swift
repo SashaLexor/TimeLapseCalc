@@ -7,17 +7,19 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-protocol PickerCellViewModelProtocol: CellViewModelProtocol {
+protocol PickerCellViewModelProtocol {
     
 }
 
-class PickerCellViewModel: PickerCellViewModelProtocol {
+class PickerCellViewModel: CellViewModelProtocol, CalculatorCellViewModelProtocol {
     
     let cellIdentifier = CalculatorCellIdenfiers.pickerCell.rawValue
-    let cellTitle: String
+    var cellTitle: Observable<String>
     
     init(cellTitle: String) {
-        self.cellTitle = cellTitle
+        self.cellTitle = Observable.just(cellTitle)
     }
 }

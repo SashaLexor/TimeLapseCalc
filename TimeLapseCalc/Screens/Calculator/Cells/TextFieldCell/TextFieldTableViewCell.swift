@@ -7,22 +7,21 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TextFieldTableViewCell: UITableViewCell, CalculatorCellProtocol {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
-    func setupWithViewModel(viewModel: CellViewModelProtocol) {
-        
-    }
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var textField: UITextField!
+    
+    private let disposeBag = DisposeBag()
 
+    func setupWithViewModel(viewModel: CellViewModelProtocol) {
+        guard let viewModel = viewModel as? TextFieldCellViewModel else { return }
+        
+        viewModel.cellTitle
+            .bind(to: title.rx.text)
+            .disposed(by: disposeBag)
+    }
 }

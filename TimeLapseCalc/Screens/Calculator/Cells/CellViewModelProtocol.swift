@@ -7,10 +7,15 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 protocol CellViewModelProtocol {
     var cellIdentifier: String { get }
-    var cellTitle: String { get }
+}
+
+protocol CalculatorCellViewModelProtocol {
+    var cellTitle: Observable<String> { get }
 }
 
 protocol CalculatorCellProtocol {
